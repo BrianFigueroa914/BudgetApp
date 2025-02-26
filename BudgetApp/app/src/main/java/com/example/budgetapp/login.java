@@ -19,11 +19,14 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
 
+        //variables
         final EditText username = findViewById(R.id.username);
         final EditText password = findViewById(R.id.password);
         final ImageView showPassword = findViewById(R.id.showPasswordIcon);
-        final TextView signInBtn = findViewById(R.id.signInBtn);
+        final TextView loginBtn = findViewById(R.id.loginBtn);
 
+        //methods
+        //show or hide password method
         showPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View temp) {
