@@ -1,5 +1,6 @@
 package com.example.budgetapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
@@ -15,7 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class register extends AppCompatActivity {
-//global variables
+    //global variables
     private boolean passwordShowing = false;
     private boolean confirmPasswordShowing = false;
 
@@ -77,6 +78,10 @@ public class register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
+
+
+//                startActivity(new Intent(register.this, dashboard.class));
             }
         });
 

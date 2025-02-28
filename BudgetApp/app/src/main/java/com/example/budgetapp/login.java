@@ -24,12 +24,13 @@ public class login extends AppCompatActivity {
         final EditText password = findViewById(R.id.password);
         final ImageView showPassword = findViewById(R.id.showPasswordIcon);
         final TextView loginBtn = findViewById(R.id.loginBtn);
+        final TextView registerBtn = findViewById(R.id.registerBtn);
 
         //methods
         //show or hide password method
         showPassword.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View temp) {
+            public void onClick(View v) {
                 if (passwordShowing) {
                     passwordShowing = false;
                     password.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
@@ -40,6 +41,14 @@ public class login extends AppCompatActivity {
                     showPassword.setImageResource(R.drawable.baseline_block_24);
 
                 }
+            }
+        });
+
+        //launch register activity
+        registerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(login.this, register.class));
             }
         });
 

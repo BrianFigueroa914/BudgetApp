@@ -107,6 +107,13 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 
+            <TextView
+                android:id="@+id/registerBtn"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="Need an account? Create one here"
+                android:textAlignment="center"/>
 
         </LinearLayout>
 
