@@ -23,7 +23,7 @@ public class login extends AppCompatActivity {
         final EditText username = findViewById(R.id.username);
         final EditText password = findViewById(R.id.password);
         final ImageView showPassword = findViewById(R.id.showPasswordIcon);
-        final TextView loginBtn = findViewById(R.id.loginBtn);
+        final TextView loginBtn = findViewById(R.id.logInBtn);
         final TextView registerBtn = findViewById(R.id.registerBtn);
 
         //methods

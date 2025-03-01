@@ -28,6 +28,7 @@
         android:layout_marginEnd="20dp"
         android:background="@color/jade"
         android:text="Log In"
+        android:textSize="25dp"
         android:textAllCaps="false"
         android:textColor="@color/black"/>
 </LinearLayout>
