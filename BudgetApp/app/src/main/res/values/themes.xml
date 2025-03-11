@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.BudgetApp" parent="Base.Theme.BudgetApp" />
+    <style name="Theme.BudgetApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.BudgetApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.BudgetApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

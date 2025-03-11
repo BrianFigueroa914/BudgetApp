@@ -29,6 +29,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -41,6 +44,10 @@ dependencies {
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.activity:activity:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.2.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+    implementation("androidx.navigation:navigation-fragment:2.6.0")
+    implementation("androidx.navigation:navigation-ui:2.6.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
