@@ -52,5 +52,11 @@ public class login extends AppCompatActivity {
             }
         });
 
+        loginBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) { startActivity(new Intent(login.this, Dashboard.class));}
+        });
+
+
     }
 }
