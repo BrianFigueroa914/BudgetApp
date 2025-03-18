@@ -103,8 +103,8 @@ public class register extends AppCompatActivity {
                     if (strUsername.length() >=  MAX_USER_CHARS) {
                         errorMsg.setText("User must be less than 50 characters");
                     }
-                    else if (strEmail.length() >= MAX_EMAIL_CHARS && !strEmail.contains("@") ) {
-                        errorMsg.setText("Incorrect email input: Must be less than 50 characters and have an \"@\" symbol");
+                    else if (strEmail.length() >= MAX_EMAIL_CHARS) {
+                        errorMsg.setText("Email must be less than 50 characters");
                     }
                    /* else if (strPassword.length() + strConfirmPassword.length() < MIN_PASSWORD_CHARS && !strPassword.equals(strConfirmPassword) ){
                         errorMsg.setText("Email must be less than 50 characters");
